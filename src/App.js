@@ -3,6 +3,7 @@ import Landing from "./components/Landing";
 import arrow from './assets/arrow.png';
 import Sidebar from "./components/Sidebar";
 import Content from './components/Content'
+import Desktop from "./components/Desktop";
 
 export default function App() {
   const ServicesRef = useRef(null);
@@ -16,9 +17,8 @@ export default function App() {
     <>
       <Landing />
       <button onClick={gotoServices}><img src={arrow} style={styles.button}/></button>
-      {/* <Experiences ref={ServicesRef}/> */}
-      <Sidebar />
-      {/* <Content show="NCWIT" /> */}
+      <Desktop />
+      {/* <small style={styles.footer}>(c) Isabel Sofia V. Abonitalla</small> */}
     </>
   )
 }
@@ -29,5 +29,12 @@ const styles={
     bottom: '2vh',
     left: '48vw',
     height: '4vw',
+  },
+  footer: {
+    fontFamily: 'Poppins',
+    margin: '20px auto',
+    position: 'absolute',
+    bottom: '0',
+
   }
 }

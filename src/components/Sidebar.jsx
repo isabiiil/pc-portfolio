@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import folder from './../assets/folder.png';
+import Content, { NCWIT } from './Content';
+
 import file from './../assets/documents.png';
 import back from './../assets/back.png';
-import Content, { NCWIT } from './Content';
+import craving from './../assets/craving.png';
+import roblox from './../assets/roblox.jpg';
+import oden from './../assets/oden.png';
+
+import { root } from './../data/Sidebar';
 
 export default function Sidebar() {
   const [page, setPage] = useState('root');
@@ -10,22 +15,14 @@ export default function Sidebar() {
   function Root({setPage}) {
     return (
       <div style={styles.container} className="sidebar">
-        <div style={styles.icon} onClick={() => setPage('news')}>
-          <img src={folder} style={styles.image} />
-          <p>featured news</p>
-        </div>
-        <div style={styles.icon} onClick={() => setPage('work')}>
-          <img src={folder} style={styles.image} />
-          <p>work experience</p>
-        </div>
-        <div style={styles.icon}>
-          <img src={folder} style={styles.image} />
-          <p>extracurriculars</p>
-        </div>
-        <div style={styles.icon}>
-          <img src={folder} style={styles.image} />
-          <p>project highlights</p>
-        </div>
+        {root.map(f => {
+          return (
+            <div style={styles.icon} onClick={() => setPage(f.link)}>
+              <img src={f.icon} style={styles.image} />
+              <p>{f.title}</p>
+            </div>
+          )
+        })}
       </div>
     )
   };
@@ -81,15 +78,15 @@ export default function Sidebar() {
           <p>root directory</p>
         </div>
         <div style={styles.icon}>
-          <img src={file} style={styles.image} />
+          <img src={craving} style={styles.image} />
           <p>Craving</p>
         </div>
         <div style={styles.icon}>
-          <img src={file} style={styles.image} />
+          <img src={roblox} style={styles.image} />
           <p>Roblox</p>
         </div>
         <div style={styles.icon}>
-          <img src={file} style={styles.image} />
+          <img src={oden} style={styles.image} />
           <p>Oden Technologies</p>
         </div>
         <div style={styles.icon}>

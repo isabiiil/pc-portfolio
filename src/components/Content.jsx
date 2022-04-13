@@ -1,32 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
+import border from './../assets/browser.png';
 
 export default function Content({show}) {
-
-  function Ncwit() {
-    console.log('step 2')
-    return (
-      <p>NCWIT FINALIST</p>
-    )
-  }
-
-  function Codecademy() {
-    return (
-      <p>Codecademy Interview</p>
-    )
-  }
-
   switch(show) {
     case 'Ncwit':
-      console.log('ncwit show');
       return (
         <div style={styles.container}>
-          <Ncwit />
+          <div style={styles.textbox}>
+            <h1><a href="https://www.aspirations.org/blog/national-center-women-information-technology-ncwit-selects-finalists-2021-ncwit-collegiate">The National Center for Women & Information Technology (NCWIT) Selects Finalists for the 2021 NCWIT Collegiate Award</a></h1>
+          </div>
+          <img src={border} style={styles.browser} />
         </div>
       )
     case 'Codecademy':
       return (
         <div style={styles.container}>
-          <Codecademy />
+          <div style={styles.textbox}>
+            <p>Choose a file.</p>
+          </div>
+          <img src={border} style={styles.browser} />
+        </div>
+      )
+    default:
+      return (
+        <div style={styles.container}>
+          <div style={styles.textbox}>
+            <p>Choose a file.</p>
+          </div>
+          <img src={border} style={styles.browser} />
         </div>
       )
   };
@@ -37,9 +38,24 @@ export default function Content({show}) {
 
 const styles = {
   container: {
-    width: '60vw',
-    height: '60vh',
-    margin: '0 auto',
-    border: 'solid black 3px',
+    position: 'relative',
+    left: '15vw',
+  },
+  browser: {
+    position: 'absolute',
+    height: '75vh',
+    zIndex: '-9',
+  },
+  textbox: {
+    position: 'absolute',
+    zIndex: '9',
+    float: 'left',
+    fontFamily: 'Poppins',
+    height: '510px',
+    width: '1204px',
+    margin: '160px 20px',
+    padding: '10px',
+    overflowY: 'scroll',
+    overflowX: 'hidden',
   }
 }
