@@ -3,6 +3,7 @@ import back from './../assets/back.png';
 import file from './../assets/documents.png';
 import code from './../assets/coding.png';
 
+import microsoft from './../assets/ms.png';
 import hunter from './../assets/hunter.jpg'
 import roblox from './../assets/roblox.jpg';
 import oden from './../assets/oden.png';
@@ -125,76 +126,83 @@ export const work = [
   },
   {
     id: 2,
+    title: 'Software Engineering Intern',
+    company: 'Microsoft',
+    link: 'work',
+    icon: microsoft,
+  },
+  {
+    id: 3,
     title: 'Undergraduate Teaching Assistant',
     company: 'Hunter College',
     link: 'work',
     icon: hunter,
   },
   {
-    id: 3,
+    id: 4,
     title: 'Product Management Intern',
     company: 'Roblox',
     link: 'work',
     icon: roblox,
   },
   {
-    id: 4, 
+    id: 5, 
     title: 'Software Engineering Intern',
     company: 'Oden Technologies',
     link: 'work',
     icon: oden,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Director of Partnerships, Web Developer and Project Manager',
     company: 'JumpButton Studio',
     link: 'work',
     icon: jbs,
   },
   {
-    id: 6,
+    id: 7,
     title: 'Teaching Assistant',
     company: 'Research Foundation of City University of New York',
     link: 'work',
     icon: rfcuny,
   },
   {
-    id: 7,
+    id: 8,
     title: 'Web Development Intern',
     company: 'Caribou Health',
     link: 'work',
     icon: caribou,
   },
   {
-    id: 8,
+    id: 9,
     title: 'Operations & IT Intern',
     company: 'Fiera Capital Inc.',
     link: 'work',
     icon: fiera,
   },
   {
-    id: 9,
+    id: 10,
     title: 'Data Analytics Intern',
     company: 'City University of New York: Registrar',
     link: 'work',
     icon: cuny,
   },
   {
-    id: 10,
+    id: 11,
     title: 'Quality Manager',
     company: 'Khan\'s Tutorial',
     link: 'work',
     icon: kt,
   },
   {
-    id: 11,
+    id: 12,
     title: 'Nursing Informatics Intern',
     company: 'Robert Wood Johnson University Hospital',
     link: 'work',
     icon: rwjbh,
   },
   {
-    id: 12,
+    id: 13,
     title: 'Research Associate',
     company: 'Columbia University Irving Medical Center',
     link: 'work',
@@ -276,7 +284,7 @@ export const proj = [
   },
   {
     id: 2,
-    title: 'Business Starter Pack',
+    title: 'meds.fyi',
     link: 'proj',
     icon: code,
   },

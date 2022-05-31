@@ -86,10 +86,12 @@ body {
 	background: #B75E9A; 
 }
 
-/* .browser {
-	background-image: url('./assets/browser.png');
-	background-repeat: no-repeat;
-  background-size: cover;
-	height: 100vh;
-	width: 80vw;
-} */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #B75E9A;
+}

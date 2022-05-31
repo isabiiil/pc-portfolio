@@ -27,7 +27,7 @@ export default function Landing() {
         }}
       />
       </div>
-      <p style={styles.headline}>CUNY Hunter College | Major League Hacking | CUNY Hackathon</p>
+      <p style={styles.headline}>CUNY Hunter College | Major League Hacking | Microsoft</p>
     </div>
   );
 }
